@@ -59,3 +59,8 @@ silent! colorscheme py-darcula
 
 " vim-airline
 set laststatus=2
+
+" Show/hide line numbers 
+noremap <F3> :set invnumber<CR>
+inoremap <F3> <C-O>:set invnumber<CR>
+
