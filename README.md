@@ -1,2 +1,2 @@
 # vimrc_file
-my .vimrc file.
+my .vimrc and .zshrc files.
