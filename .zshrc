@@ -1,8 +1,9 @@
+export TERM="xterm-256color"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/kuba/.oh-my-zsh
+  export ZSH=/home/$USER/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -52,7 +53,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git autojump autopep8 bower celery command-not-found common-aliases django dirhistory docker httpie jsontools ng npm pyenv python sudo zsh-autosuggestions)
+plugins=(git autojump autopep8 bower celery command-not-found common-aliases django dirhistory docker httpie jsontools ng npm pyenv python sudo zsh-autosuggestions zsh-syntax-highlighting) # syntax-highlighting must be last
 
 source $ZSH/oh-my-zsh.sh
 
@@ -90,5 +91,5 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time time)
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=1
 
 alias ccat='pygmentize -g'
-
-[[ -s /home/kuba/.autojump/etc/profile.d/autojump.sh ]] && source /home/kuba/.autojump/etc/profile.d/autojump.sh
+. /usr/share/autojump/autojump.sh
+[[ -s /home/$USER/.autojump/etc/profile.d/autojump.sh ]] && source /home/$USER/.autojump/etc/profile.d/autojump.sh
