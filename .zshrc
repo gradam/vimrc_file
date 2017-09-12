@@ -3,7 +3,7 @@ export TERM="xterm-256color"
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/$USER/.oh-my-zsh
+  export ZSH=/home/jsemik/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -89,7 +89,15 @@ source $ZSH/oh-my-zsh.sh
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir pyenv vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time time)
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=1
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_DIR_HOME_BACKGROUND='034'
+POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='034'
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND='034'
+POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR=$'\uf0da'
+POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR=$'\uf0d9'
+
 
 alias ccat='pygmentize -g'
 . /usr/share/autojump/autojump.sh
-[[ -s /home/$USER/.autojump/etc/profile.d/autojump.sh ]] && source /home/$USER/.autojump/etc/profile.d/autojump.sh
+[[ -s /home/jsemik/.autojump/etc/profile.d/autojump.sh ]] && source /home/jsemik/.autojump/etc/profile.d/autojump.sh
+source /usr/local/share/fonts/*.sh
