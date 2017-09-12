@@ -3,12 +3,12 @@ export TERM="xterm-256color"
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/jsemik/.oh-my-zsh
+  export ZSH=/home/$USER/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-POWERLEVEL9K_MODE='awesome-fontconfig'
+POWERLEVEL9K_MODE='nerdfont-complete'
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -93,11 +93,8 @@ POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_DIR_HOME_BACKGROUND='034'
 POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='034'
 POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND='034'
-POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR=$'\uf0da'
-POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR=$'\uf0d9'
 
 
 alias ccat='pygmentize -g'
 . /usr/share/autojump/autojump.sh
-[[ -s /home/jsemik/.autojump/etc/profile.d/autojump.sh ]] && source /home/jsemik/.autojump/etc/profile.d/autojump.sh
-source /usr/local/share/fonts/*.sh
+[[ -s /home/$USER/.autojump/etc/profile.d/autojump.sh ]] && source /home/$USER/.autojump/etc/profile.d/autojump.sh
